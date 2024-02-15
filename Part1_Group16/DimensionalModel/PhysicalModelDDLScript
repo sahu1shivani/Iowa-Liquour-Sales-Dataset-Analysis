@@ -1,0 +1,275 @@
+--
+-- ER/Studio Data Architect SQL Code Generation
+-- Project :      Iowa_Dimensional_Model.DM1
+--
+-- Date Created : Tuesday, April 04, 2023 18:28:45
+-- Target DBMS : MySQL 8.x
+--
+
+-- 
+-- TABLE: Dim_City_Population 
+--
+
+CREATE TABLE Dim_City_Population(
+    CityPopulationSK    INT                     NOT NULL,
+    Fips                INT,
+    City                VARCHAR(20),
+    Year                INT,
+    Population          INT,
+    Latitude            FLOAT(8, 0),
+    Longitude           FLOAT(8, 0),
+    DI_CreateDate       DATE,
+    DI_JobID            NATIONAL VARCHAR(20),
+    GeoSK               INT,
+    PRIMARY KEY (CityPopulationSK)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: Dim_County_Population 
+--
+
+CREATE TABLE Dim_County_Population(
+    CountyPopulationSK    INT                     NOT NULL,
+    Fips                  INT,
+    County                VARCHAR(20),
+    Year                  INT,
+    Population            INT,
+    Latitude              FLOAT(8, 0),
+    Longitude             FLOAT(8, 0),
+    DI_CreateDate         DATE,
+    DI_JobID              NATIONAL VARCHAR(20),
+    GeoSK                 INT,
+    PRIMARY KEY (CountyPopulationSK)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: Dim_Geo 
+--
+
+CREATE TABLE Dim_Geo(
+    GeoSK            INT                     NOT NULL,
+    Address          VARCHAR(80),
+    City             VARCHAR(50),
+    CountyNumber     CHAR(2),
+    County           VARCHAR(50),
+    State            CHAR(2),
+    ZipCode          INT,
+    Latitude         FLOAT(8, 0),
+    Longitude        FLOAT(8, 0),
+    DI_CreateDate    DATETIME,
+    DI_JobID         NATIONAL VARCHAR(20),
+    PRIMARY KEY (GeoSK)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: Dim_ProductCategory 
+--
+
+CREATE TABLE Dim_ProductCategory(
+    CategorySK        INT                     NOT NULL,
+    CategoryNumber    INT,
+    CategoryName      VARCHAR(50),
+    DI_CreateDate     DATETIME,
+    DI_JobID          NATIONAL VARCHAR(20),
+    PRIMARY KEY (CategorySK)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: Dim_Products 
+--
+
+CREATE TABLE Dim_Products(
+    ProductSK            INT                     NOT NULL,
+    ItemDescription      VARCHAR(30),
+    ItemNumber           VARCHAR(10),
+    BottleVolumeMl       INT,
+    Pack                 INT,
+    InnerPack            INT,
+    Age                  INT,
+    Proof                INT,
+    ListDate             DATE,
+    UPC                  VARCHAR(12),
+    SCC                  BIGINT,
+    StateBottleCost      FLOAT(8, 0),
+    StateCaseCost        FLOAT(8, 0),
+    StateBottleRetail    FLOAT(8, 0),
+    DI_CreateDate        DATETIME,
+    DI_JobID             NATIONAL VARCHAR(20),
+    CategorySK           INT,
+    VendorSK             INT,
+    PRIMARY KEY (ProductSK)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: Dim_Stores 
+--
+
+CREATE TABLE Dim_Stores(
+    StoreSK          INT                     NOT NULL,
+    Store            INT,
+    Name             VARCHAR(80),
+    StoreStatus      CHAR(1),
+    DI_CreateDate    DATETIME,
+    DI_JobID         NATIONAL VARCHAR(20),
+    GeoSK            INT,
+    PRIMARY KEY (StoreSK)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: Dim_Vendor 
+--
+
+CREATE TABLE Dim_Vendor(
+    VendorSK         INT                     NOT NULL,
+    VendorNumber     VARCHAR(50),
+    VendorName       VARCHAR(80),
+    DI_CreateDate    DATETIME,
+    DI_JobID         NATIONAL VARCHAR(20),
+    PRIMARY KEY (VendorSK)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- TABLE: Fact_Sales 
+--
+
+CREATE TABLE Fact_Sales(
+    SalesSK                 INT                     NOT NULL,
+    StoreSK                 INT                     NOT NULL,
+    ProductSK               INT                     NOT NULL,
+    InvoiceAndItemNumber    VARCHAR(50),
+    Date                    DATE,
+    BottlesSold             INT,
+    SaleDollars             FLOAT(8, 0),
+    VolumeSoldLitres        FLOAT(8, 0),
+    VolumeSoldGallons       FLOAT(8, 0),
+    DI_CreateDate           DATE,
+    DI_JobID                NATIONAL VARCHAR(20),
+    PRIMARY KEY (SalesSK)
+)ENGINE=MYISAM
+;
+
+
+
+-- 
+-- INDEX: Ref316 
+--
+
+CREATE INDEX Ref316 ON Dim_City_Population(GeoSK)
+;
+-- 
+-- INDEX: Ref317 
+--
+
+CREATE INDEX Ref317 ON Dim_County_Population(GeoSK)
+;
+-- 
+-- INDEX: Ref514 
+--
+
+CREATE INDEX Ref514 ON Dim_Products(CategorySK)
+;
+-- 
+-- INDEX: Ref615 
+--
+
+CREATE INDEX Ref615 ON Dim_Products(VendorSK)
+;
+-- 
+-- INDEX: Ref39 
+--
+
+CREATE INDEX Ref39 ON Dim_Stores(GeoSK)
+;
+-- 
+-- INDEX: FK_Dim_Iowa_Stores_FCT_Iowa_Sales 
+--
+
+CREATE INDEX FK_Dim_Iowa_Stores_FCT_Iowa_Sales ON Fact_Sales(StoreSK)
+;
+-- 
+-- INDEX: FK_Dim_Iowa_Products_FCT_Iowa_Sales 
+--
+
+CREATE INDEX FK_Dim_Iowa_Products_FCT_Iowa_Sales ON Fact_Sales(ProductSK)
+;
+-- 
+-- TABLE: Dim_City_Population 
+--
+
+ALTER TABLE Dim_City_Population ADD CONSTRAINT RefDim_Geo16 
+    FOREIGN KEY (GeoSK)
+    REFERENCES Dim_Geo(GeoSK)
+;
+
+
+-- 
+-- TABLE: Dim_County_Population 
+--
+
+ALTER TABLE Dim_County_Population ADD CONSTRAINT RefDim_Geo17 
+    FOREIGN KEY (GeoSK)
+    REFERENCES Dim_Geo(GeoSK)
+;
+
+
+-- 
+-- TABLE: Dim_Products 
+--
+
+ALTER TABLE Dim_Products ADD CONSTRAINT RefDim_ProductCategory14 
+    FOREIGN KEY (CategorySK)
+    REFERENCES Dim_ProductCategory(CategorySK)
+;
+
+ALTER TABLE Dim_Products ADD CONSTRAINT RefDim_Vendor15 
+    FOREIGN KEY (VendorSK)
+    REFERENCES Dim_Vendor(VendorSK)
+;
+
+
+-- 
+-- TABLE: Dim_Stores 
+--
+
+ALTER TABLE Dim_Stores ADD CONSTRAINT RefDim_Geo9 
+    FOREIGN KEY (GeoSK)
+    REFERENCES Dim_Geo(GeoSK)
+;
+
+
+-- 
+-- TABLE: Fact_Sales 
+--
+
+ALTER TABLE Fact_Sales ADD CONSTRAINT FK_Dim_Iowa_Products_FCT_Iowa_Sales 
+    FOREIGN KEY (ProductSK)
+    REFERENCES Dim_Products(ProductSK)
+;
+
+ALTER TABLE Fact_Sales ADD CONSTRAINT FK_Dim_Iowa_Stores_FCT_Iowa_Sales 
+    FOREIGN KEY (StoreSK)
+    REFERENCES Dim_Stores(StoreSK)
+;
+
+

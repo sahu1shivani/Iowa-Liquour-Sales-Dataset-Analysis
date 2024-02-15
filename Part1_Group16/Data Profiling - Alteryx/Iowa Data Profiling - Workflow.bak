@@ -1,0 +1,1030 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="89" y="0" width="649" height="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 10</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114" y="140" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="258" y="139" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Invoice/Item Number" selected="True" />
+                <SelectField field="Date" selected="True" />
+                <SelectField field="Store Number" selected="True" />
+                <SelectField field="Store Name" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="Zip Code" selected="True" />
+                <SelectField field="Store Location" selected="True" />
+                <SelectField field="County Number" selected="True" />
+                <SelectField field="County" selected="True" />
+                <SelectField field="Category" selected="True" />
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="Vendor Number" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="Item Number" selected="True" />
+                <SelectField field="Item Description" selected="True" />
+                <SelectField field="Pack" selected="True" />
+                <SelectField field="Bottle Volume (ml)" selected="True" />
+                <SelectField field="State Bottle Cost" selected="True" />
+                <SelectField field="State Bottle Retail" selected="True" />
+                <SelectField field="Bottles Sold" selected="True" />
+                <SelectField field="Sale (Dollars)" selected="True" />
+                <SelectField field="Volume Sold (Liters)" selected="True" />
+                <SelectField field="Volume Sold (Gallons)" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="390" y="140" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Invoice/Item Number" selected="True" />
+                <Field field="Date" selected="True" />
+                <Field field="Store Number" selected="True" />
+                <Field field="Store Name" selected="True" />
+                <Field field="Address" selected="True" />
+                <Field field="City" selected="True" />
+                <Field field="Zip Code" selected="True" />
+                <Field field="Store Location" selected="True" />
+                <Field field="County Number" selected="True" />
+                <Field field="County" selected="True" />
+                <Field field="Category" selected="True" />
+                <Field field="Category Name" selected="True" />
+                <Field field="Vendor Number" selected="True" />
+                <Field field="Vendor Name" selected="True" />
+                <Field field="Item Number" selected="True" />
+                <Field field="Item Description" selected="True" />
+                <Field field="Pack" selected="True" />
+                <Field field="Bottle Volume (ml)" selected="True" />
+                <Field field="State Bottle Cost" selected="True" />
+                <Field field="State Bottle Retail" selected="True" />
+                <Field field="Bottles Sold" selected="True" />
+                <Field field="Sale (Dollars)" selected="True" />
+                <Field field="Volume Sold (Liters)" selected="True" />
+                <Field field="Volume Sold (Gallons)" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="16" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Date" size="10" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Store Number" size="6" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Store Name" size="58" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Address" size="55" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="City" size="17" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Zip Code" size="5" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Store Location" size="45" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="County Number" size="2" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="County" size="13" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Category" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Int32" />
+                <Field name="Category Name" size="36" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Vendor Number" size="3" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Vendor Name" size="67" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="7" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="String" />
+                <Field name="Item Description" size="63" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Int16" />
+                <Field name="Bottle Volume (ml)" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Int32" />
+                <Field name="State Bottle Cost" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+                <Field name="State Bottle Retail" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+                <Field name="Bottles Sold" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Int16" />
+                <Field name="Sale (Dollars)" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+                <Field name="Volume Sold (Liters)" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+                <Field name="Volume Sold (Gallons)" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Sales.tsv" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+            <Position x="510" y="80" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Limit_UniqueCount>10000</Limit_UniqueCount>
+              <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+              <IsMetric value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings>
+            <Position x="510" y="169" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">Invoice/Item Number=True,Date=True,Store Number=True,Store Name=True,Address=True,City=True,Zip Code=True,Store Location=True,County Number=True,County=True,Category=True,Category Name=True,Vendor Number=True,Vendor Name=True,Item Number=True,Item Description=True,Pack=True,Bottle Volume (ml)=True,State Bottle Cost=True,State Bottle Retail=True,Bottles Sold=True,Sale (Dollars)=True,Volume Sold (Liters)=True,Volume Sold (Gallons)=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">True</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">False</Value>
+              <Value name="NPercent">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="654" y="49" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_22124_2876c1aa2386a74fa67e46fd693d59ed_\Engine_22124_d416a165a92e264c86361c02355c1e7f~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="654" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_22124_2876c1aa2386a74fa67e46fd693d59ed_\Engine_22124_203382ac3661dd418ca2005ecdcf99cf~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="654" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_22124_2876c1aa2386a74fa67e46fd693d59ed_\Engine_22124_c4955cba0587ff469d86b5834f91d970~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="654" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_22124_2876c1aa2386a74fa67e46fd693d59ed_\Engine_22124_0988c5a6ac444347ba7abda268491c7b~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="100" y="329" width="637" height="289" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 20</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="125" y="413" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iowa_Liquor_Products.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Item Number" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Inner Pack" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Age" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Proof" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="List Date" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="UPC" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="SCC" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Case Cost" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Report Date" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="258" y="413" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Item Number" selected="True" />
+                <SelectField field="Category Name" selected="True" />
+                <SelectField field="Item Description" selected="True" />
+                <SelectField field="Vendor" selected="True" />
+                <SelectField field="Vendor Name" selected="True" />
+                <SelectField field="Bottle Volume (ml)" selected="True" />
+                <SelectField field="Pack" selected="True" />
+                <SelectField field="Inner Pack" selected="True" />
+                <SelectField field="Age" selected="True" />
+                <SelectField field="Proof" selected="True" />
+                <SelectField field="List Date" selected="True" />
+                <SelectField field="UPC" selected="True" />
+                <SelectField field="SCC" selected="True" />
+                <SelectField field="State Bottle Cost" selected="True" />
+                <SelectField field="State Case Cost" selected="True" />
+                <SelectField field="State Bottle Retail" selected="True" />
+                <SelectField field="Report Date" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="402" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Item Number" selected="True" />
+                <Field field="Category Name" selected="True" />
+                <Field field="Item Description" selected="True" />
+                <Field field="Vendor" selected="True" />
+                <Field field="Vendor Name" selected="True" />
+                <Field field="Bottle Volume (ml)" selected="True" />
+                <Field field="Pack" selected="True" />
+                <Field field="Inner Pack" selected="True" />
+                <Field field="Age" selected="True" />
+                <Field field="Proof" selected="True" />
+                <Field field="List Date" selected="True" />
+                <Field field="UPC" selected="True" />
+                <Field field="SCC" selected="True" />
+                <Field field="State Bottle Cost" selected="True" />
+                <Field field="State Case Cost" selected="True" />
+                <Field field="State Bottle Retail" selected="True" />
+                <Field field="Report Date" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Item Number" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Int32" />
+                <Field name="Category Name" size="36" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_String" />
+                <Field name="Item Description" size="60" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor" size="3" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="String" />
+                <Field name="Vendor Name" size="60" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_String" />
+                <Field name="Bottle Volume (ml)" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Int16" />
+                <Field name="Pack" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="Inner Pack" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="Age" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="Proof" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="List Date" size="10" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="String" />
+                <Field name="UPC" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Int64" />
+                <Field name="SCC" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Int64" />
+                <Field name="State Bottle Cost" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="State Case Cost" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="State Bottle Retail" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="Report Date" size="10" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+            <Position x="522" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Limit_UniqueCount>10000</Limit_UniqueCount>
+              <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+              <IsMetric value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings>
+            <Position x="522" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">Item Number=True,Category Name=True,Item Description=True,Vendor=True,Vendor Name=True,Bottle Volume (ml)=True,Pack=True,Inner Pack=True,Age=True,Proof=True,List Date=True,UPC=True,SCC=True,State Bottle Cost=True,State Case Cost=True,State Bottle Retail=True,Report Date=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">True</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">False</Value>
+              <Value name="NPercent">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="654" y="378" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_4532_9b097af8247ccb438afa67d4a50704c9_\Engine_4532_f2f1b30bca96d04a99aa67ebf68796ed~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="654" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_4532_9b097af8247ccb438afa67d4a50704c9_\Engine_4532_153a549423db6a4d8c50091f69696ec4~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="654" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_4532_9b097af8247ccb438afa67d4a50704c9_\Engine_4532_49f4b472d24437458fc5957072032953~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="654" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_4532_9b097af8247ccb438afa67d4a50704c9_\Engine_4532_0f2cca95b635e545b9eb02ee3d61f4cb~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="113" y="653" width="649" height="325" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 30</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="138" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iowa_Liquor_Stores.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Name" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Store Status" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="State" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Store Address" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+                <Field name="Report Date" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="282" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Store" selected="True" />
+                <SelectField field="Name" selected="True" />
+                <SelectField field="Store Status" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Zip Code" selected="True" />
+                <SelectField field="Store Address" selected="True" />
+                <SelectField field="Report Date" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="414" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Store" selected="True" />
+                <Field field="Name" selected="True" />
+                <Field field="Store Status" selected="True" />
+                <Field field="Address" selected="True" />
+                <Field field="City" selected="True" />
+                <Field field="State" selected="True" />
+                <Field field="Zip Code" selected="True" />
+                <Field field="Store Address" selected="True" />
+                <Field field="Report Date" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Store" size="6" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+                <Field name="Name" size="58" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_String" />
+                <Field name="Store Status" size="1" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+                <Field name="Address" size="55" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_String" />
+                <Field name="City" size="17" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="V_String" />
+                <Field name="State" size="2" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+                <Field name="Zip Code" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="Int32" />
+                <Field name="Store Address" size="28" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+                <Field name="Report Date" size="10" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Stores.tsv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+            <Position x="546" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Limit_UniqueCount>10000</Limit_UniqueCount>
+              <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+              <IsMetric value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings>
+            <Position x="546" y="834" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">Store=True,Name=True,Store Status=True,Address=True,City=True,State=True,Zip Code=True,Store Address=True,Report Date=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">True</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">False</Value>
+              <Value name="NPercent">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="678" y="702" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_9260_62f8ca8ed1e0f64996e4f75e9aaf5e9a_\Engine_9260_8852068fb43aea4d9880707c92c58049~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="678" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_9260_62f8ca8ed1e0f64996e4f75e9aaf5e9a_\Engine_9260_a8422564f6cf6d428cc0e49173877d6f~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="678" y="834" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_9260_62f8ca8ed1e0f64996e4f75e9aaf5e9a_\Engine_9260_9ff8c9028f4a4045a5d718be3b8e4677~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="678" y="894" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\aparn\AppData\Local\Temp\Engine_9260_62f8ca8ed1e0f64996e4f75e9aaf5e9a_\Engine_9260_6707bfc015d647498c8001a1e7fe76d8~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Reports" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Interactive" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Reports" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Interactive" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Reports" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Interactive" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Iowa Data Profiling - Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="1eb5b81d-53ff-49e0-b6bc-080c6386dc9a" />
+      <Telemetry>
+        <PreviousWorkflowId value="00539573-77ca-414c-9435-b06a0383bf91" />
+        <OriginWorkflowId value="00539573-77ca-414c-9435-b06a0383bf91" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

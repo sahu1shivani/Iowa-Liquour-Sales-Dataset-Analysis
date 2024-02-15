@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="55" y="54" width="1308" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Iowa Liquor Sales Staging Workflow
+Target Database  - SQL Server (Localhost)</Text>
+          <Font name="Arial" size="21.75" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="225" g="242" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="209" width="1322" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Load stg_iowa_liquor_products</Caption>
+          <Style TextColor="#314c4a" FillColor="#e9e9e9" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Iowa_Liquor_Products.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Item Number" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Inner Pack" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Age" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Proof" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="List Date" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="UPC" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="SCC" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Case Cost" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Report Date" size="254" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="211" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Item Number" selected="True" />
+                <Field field="Category Name" selected="True" />
+                <Field field="Item Description" selected="True" />
+                <Field field="Vendor" selected="True" />
+                <Field field="Vendor Name" selected="True" />
+                <Field field="Bottle Volume (ml)" selected="True" />
+                <Field field="Pack" selected="True" />
+                <Field field="Inner Pack" selected="True" />
+                <Field field="Age" selected="True" />
+                <Field field="Proof" selected="True" />
+                <Field field="List Date" selected="True" />
+                <Field field="UPC" selected="True" />
+                <Field field="SCC" selected="True" />
+                <Field field="State Bottle Cost" selected="True" />
+                <Field field="State Case Cost" selected="True" />
+                <Field field="State Bottle Retail" selected="True" />
+                <Field field="Report Date" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Item Number" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Int32" />
+                <Field name="Category Name" size="36" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_String" />
+                <Field name="Item Description" size="60" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_WString" />
+                <Field name="Vendor" size="3" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="String" />
+                <Field name="Vendor Name" size="60" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="V_String" />
+                <Field name="Bottle Volume (ml)" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Int16" />
+                <Field name="Pack" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="Inner Pack" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="Age" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="Proof" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Byte" />
+                <Field name="List Date" size="10" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="String" />
+                <Field name="UPC" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Int64" />
+                <Field name="SCC" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Int64" />
+                <Field name="State Bottle Cost" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="State Case Cost" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="State Bottle Retail" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="Double" />
+                <Field name="Report Date" size="10" source="File: C:\Users\aparn\OneDrive\Desktop\DADABI\Iowa\Iowa_Liquor_Products.tsv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="343" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Item Number" selected="True" rename="item_number" />
+                <SelectField field="Category Name" selected="True" rename="category_name" />
+                <SelectField field="Item Description" selected="True" rename="item_description" />
+                <SelectField field="Vendor" selected="True" rename="vendor" />
+                <SelectField field="Vendor Name" selected="True" rename="vendor_name" />
+                <SelectField field="Bottle Volume (ml)" selected="True" rename="bottle_volume_ml" type="Int32" size="4" />
+                <SelectField field="Pack" selected="True" rename="pack" type="Int32" size="4" />
+                <SelectField field="Inner Pack" selected="True" rename="inner_pack" type="Int32" size="4" />
+                <SelectField field="Age" selected="True" rename="age" type="Int32" size="4" />
+                <SelectField field="Proof" selected="True" rename="proof" type="Int32" size="4" />
+                <SelectField field="List Date" selected="True" rename="list_date" />
+                <SelectField field="UPC" selected="True" rename="upc" />
+                <SelectField field="SCC" selected="True" rename="scc" />
+                <SelectField field="State Bottle Cost" selected="True" rename="state_bottle_cost" />
+                <SelectField field="State Case Cost" selected="True" rename="state_case_cost" />
+                <SelectField field="State Bottle Retail" selected="True" rename="state_bottle_retail" />
+                <SelectField field="Report Date" selected="True" rename="report_date" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="535" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="[Engine.WorkflowFileName]" field="DI_WorkFlowFileName" size="255" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+DI_WorkFlowFileName = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="691" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>stg_iowa_liquor_products_sk</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="811" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="stg_iowa_liquor_products_sk" selected="True" />
+                <SelectField field="item_number" selected="True" />
+                <SelectField field="category_name" selected="True" />
+                <SelectField field="item_description" selected="True" />
+                <SelectField field="vendor" selected="True" />
+                <SelectField field="vendor_name" selected="True" />
+                <SelectField field="bottle_volume_ml" selected="True" />
+                <SelectField field="pack" selected="True" />
+                <SelectField field="inner_pack" selected="True" />
+                <SelectField field="age" selected="True" />
+                <SelectField field="proof" selected="True" />
+                <SelectField field="list_date" selected="True" />
+                <SelectField field="modified_list_date" selected="False" />
+                <SelectField field="upc" selected="True" />
+                <SelectField field="scc" selected="True" />
+                <SelectField field="state_bottle_cost" selected="True" />
+                <SelectField field="state_case_cost" selected="True" />
+                <SelectField field="state_bottle_retail" selected="True" />
+                <SelectField field="report_date" selected="True" />
+                <SelectField field="modified_report_date" selected="False" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_WorkFlowFileName" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="967" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:iowa|||stg_iowa_liquor_products</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Overwrite</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:iowa
+Query=stg_iowa_liquor_products</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1099" y="258" width="252" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>stg_iowa_liquor_products</Text>
+              <Font name="Arial" size="9.75" style="1" />
+              <TextColor name="Black" />
+              <FillColor r="255" g="244" b="168" />
+              <Shape shape="0" />
+              <Justification Justification="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>wf_load_stg_iowa_liquor_products</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e6f6fd02-6e02-4f9a-a473-b1b6f3742921" />
+      <Telemetry>
+        <PreviousWorkflowId value="73428af7-80bc-49e9-ae41-7822c15a3100" />
+        <OriginWorkflowId value="7440487c-7676-4b1d-b2cb-555341041c4d" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
